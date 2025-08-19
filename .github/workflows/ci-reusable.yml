@@ -1,0 +1,11 @@
+name: reusable-ci-phase0
+on:
+  workflow_call:
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Phase 0 CI skeleton
+        run: echo "✅ Phase 0: CI skeleton (noop) — tidak ada lint/typecheck di phase ini."
