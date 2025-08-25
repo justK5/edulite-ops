@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Phase 0 CI skeleton
         run: echo "✅ Phase 0 CI skeleton (noop) -- tidak ada lint/typecheck di phase ini."
